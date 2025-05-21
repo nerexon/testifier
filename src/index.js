@@ -108,12 +108,14 @@ function testAll() {
         }
     }
 
-    // Output the results
+    // Output the results with colored text using ANSI escape codes
     results.forEach(result => {
         if (result.status === 'passed') {
-            console.log(`Test "${result.name}": PASSED`);
+            // Green color for passed tests
+            console.log(`\x1b[32mTest "${result.name}": PASSED\x1b[0m`);
         } else {
-            console.log(`Test "${result.name}": FAILED - ${result.error}`);
+            // Red color for failed tests
+            console.log(`\x1b[31mTest "${result.name}": FAILED - ${result.error}\x1b[0m`);
         }
     });
 
@@ -121,3 +123,4 @@ function testAll() {
 }
 
 module.exports = { Assertion, test, assert, testAll };
+
