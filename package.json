@@ -1,6 +1,6 @@
 {
   "name": "testifier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Js/Ts module to create unit tests in Node.js and Bun",
   "main": "src/index.js",
   "scripts": {
