@@ -39,6 +39,10 @@ test("Test 8: Should confirm 0 is falsy", () => {
     assert(0).toFail();
 });
 
+test("Test 9: Should be equal", () => {
+    assert("I love Tuna").toBeEqualTo("I love Tuna")
+})
+
 // Summary of Test Results
 const allPassed = testAll();
 console.log(`\nAll tests passed: ${allPassed}`);
