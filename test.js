@@ -40,7 +40,11 @@ test("Test 8: Should confirm 0 is falsy", () => {
 });
 
 test("Test 9: Should be equal", () => {
-    assert("I love Tuna").toBeEqualTo("I love Tuna")
+    assert("I love Tuna").toBeEqualTo("I love Tuna");
+})
+
+test("Test 10L Should be strictly equal", () => {
+    assert(1).toBeStrictlyEqualTo("1");
 })
 
 // Summary of Test Results

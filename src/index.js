@@ -78,6 +78,14 @@ class Assertion {
     }
 
     /**
+     * Check if the assertion is equal
+     * @param {any} valid What you want to compare it with
+     */
+    toBeStrictlyEqualTo(valid) {
+        this._checkAssertion(this.actual === valid, 'strictly equal')
+    }
+
+    /**
      * Helper method to check assertions
      * @param {boolean} condition - The condition to check
      * @param {string} expected - The expected value description
